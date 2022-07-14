@@ -22,7 +22,9 @@ button.addEventListener('click', () => {
     if(checks[2].name == "special_characters" && checks[2].checked == true){
         filter.push(especiais);
     }
-    document.querySelector('h1').innerHTML = generatePassword(parseInt(length.value));
+    document.querySelector('p').innerHTML = generatePassword(parseInt(length.value));
+
+    filter = [nums]
 })
 
 function generatePassword(_length){

@@ -13,13 +13,36 @@
             <h3>Password Length</h3>
             <input type="number" id="password_length">
             <br>
-            <input type="checkbox" name="upper_case" class="filter_check"><label> Upper Case </label><br>
-            <input type="checkbox" name="lower_case" class="filter_check"> Lower Case <br>
-            <input type="checkbox" name="special_characters" class="filter_check"> Special Characters <br>
+            <label>
+                <div class="check-container">
+                    <input type="checkbox" name="upper_case" class="filter_check">
+                    <span class="checkmark"></span>
+                </div>
+                Upper Case
+            </label>
+
+            <label>
+                <div class="check-container">
+                    <input type="checkbox" name="lower_case" class="filter_check"> 
+                    <span class="checkmark"></span>
+                </div>
+                
+                Lower Case
+            </label>
+
+            <label>
+                <div class="check-container">
+                    <input type="checkbox" name="special_characters" class="filter_check">
+                    <span class="checkmark"></span>
+                </div>
+                
+                Special Characters 
+            </label>
+
             <button id="button">Generate</button>
         </div>
         <div class="result-container">
-            <h1></h1>
+            <p></p>
         </div>
     </div>
     <script src="script.js"></script>

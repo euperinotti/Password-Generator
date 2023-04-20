@@ -4,15 +4,11 @@ const nums = '0123456789';
 const specialChar = '!"\\#$%()"*+,-./:;<=>?@[]{}_~|';
 
 let button = document.getElementById('button');
-let filter = [nums]; //array with chars
-let length = document.getElementById('password_length'); //get length of the password
-let checks = document.querySelectorAll('.filter_check'); //get the filters of the password
+let filter = [nums];
+let length = document.getElementById('password_length');
+let checks = document.querySelectorAll('.filter_check');
 
 button.addEventListener('click', () => {
-
-    // first, check if the filters are checked
-    // then add the filters to the array
-    // execute the function to generate de new password
 
     if(checks[0].name == "upper_case" && checks[0].checked == true){
         filter.push(upperChar);
@@ -26,8 +22,6 @@ button.addEventListener('click', () => {
         filter.push(specialChar);
     }
     document.querySelector('p').innerHTML = generatePassword(parseInt(length.value));
-
-    // reset the array
 
     filter = [nums]
 })

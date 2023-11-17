@@ -1,14 +1,11 @@
 const theme = {
   colors: {
     black: '#1f1f1f',
-    white: '#F9F9F9',
-    red: '#d81313',
-    orange: '#eb6e14',
-    darkGrey: '#6f6f6f'
+    lightGrey: '#d9d9d9'
   },
   fonts: {
     family: {
-      default: 'Inter'
+      default: 'Fira Code'
     },
     weight: {
       light: 300,

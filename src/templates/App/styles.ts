@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 900px;
+  padding: 0 350px;
   height: fit-content;
 `
 
@@ -14,5 +14,4 @@ export const Main = styled.main`
   justify-content: flex-start;
   flex-direction: column;
   gap: 70px;
-  padding: 30px;
 `
